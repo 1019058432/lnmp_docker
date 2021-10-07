@@ -1,0 +1,32 @@
+{
+    "name": "salamander",
+    "description": "A micro framework based on slim",
+    "keywords": ["microframework", "rest", "router", "psr7"],
+    "homepage": "http://github.com/slimphp/Slim-Skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MH",
+            "email": "1906747819@qq.com",
+            "homepage": "https://github.com/salamander-mh"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.8",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "usmanhalalit/viocon": "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Pixie\\": "pixie/"
+        }
+    },
+	"scripts": {
+        "start": "php -S 0.0.0.0:8080 -t public public/index.php",
+        "test": "phpunit"
+	}
+
+}
